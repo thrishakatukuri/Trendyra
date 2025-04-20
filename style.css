@@ -278,3 +278,34 @@ padding:10px 5px;
     height:100%;
     width:100%;
 }
+#contact{
+    width:90%;
+    height:100%;
+    padding:5%;
+}
+#contactcontainer h1{
+display: flex;
+justify-content: center;
+font-size: 2.5rem;
+}
+#contactinputs input{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+#contactinputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#userinput{
+    width:300px;
+}
+#floatingMessage{
+    width:280px;
+    height:150px;
+}
+#contactsendbtn {
+    display: flex;
+    justify-content: center;
+}
