@@ -288,17 +288,17 @@ display: flex;
 justify-content: center;
 font-size: 2.5rem;
 }
-#contactinputs input{
+#maininputs input{
     width:100%;
     display: flex;
     justify-content: center;
 }
-#contactinputs{
+#maininputs{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#userinput{
+#subinput{
     width:300px;
 }
 #floatingMessage{
