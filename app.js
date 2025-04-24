@@ -1,9 +1,14 @@
+let allProducts = []; 
 
 async function data() {
     let response = await fetch('https://fakestoreapi.com/products');
     let products = await response.json();
-    console.log(products);
+    allProducts = products;
+    console.log(allProducts);
+    renderProducts(allProducts); 
+}
 
+    function renderProducts(products) {
     let Products = document.getElementById('Products');
     Products.innerHTML = "";
 
@@ -23,9 +28,35 @@ async function data() {
             <div class="divider"></div>
          <div id="cartbtn">
                 <button class="btn btn-dark">Details</button>
-                <button class="btn btn-dark">Add to Cart</button>
+                <button class="btn btn-dark  add-to-cart">Add to Cart</button>
             </div>
        </div> `
 
+    });
+}
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        data(); 
+    
+        document.getElementById('all').addEventListener('click', () => {
+            renderProducts(allProducts);
+        });
+    
+        document.getElementById('men').addEventListener('click', () => {
+            const filtered  = allProducts.filter(item => item.category === "men's clothing");
+            renderProducts(filtered );
+        });
+        document.getElementById('women').addEventListener('click', () => {
+            const filtered  = allProducts.filter(item => item.category === "women's clothing");
+            renderProducts(filtered );
+        });
+         document.getElementById('jewelery').addEventListener('click', () => {
+            const filtered  = allProducts.filter(item => item.category === "jewelery");
+            renderProducts(filtered );
+        }); 
+        document.getElementById('electronics').addEventListener('click', () => {
+            const filtered  = allProducts.filter(item => item.category === "electronics");
+            renderProducts(filtered );
+        });
     })
-}data()
+

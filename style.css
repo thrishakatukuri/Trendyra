@@ -9,76 +9,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    width:95%;
-    overflow-x: hidden;
-    padding: 10px 0 5px 0;
-}
-#logo a{
-    background: linear-gradient(green,black);
-    background-clip: text;
-    color: transparent;
-    font-size: 3rem;
-    font-weight: bolder;
-    margin:2px;
-    transition: all 0.2s linear;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: 15px;
-}
-#logo a:hover{
-    transform: scale(1.1);
-    margin-left: 15px;
-}
-#anchor {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
-}
-#anchor a{
-    text-decoration: none;
-    color:green;
-    transition: all 0.2s ease-out;
-    font-size: 1.5rem;
-}
-#anchor a:hover{
-    text-decoration: none;
-    color:black;
-    transform: scale(1.4);
-    text-shadow: 2px 2px 2px green;
-    font-weight: 200;
-}
-header .pagerender{
-    display: flex;
-    margin-right: 100px;
-    column-gap: 20px;
-} 
-.pagerender button{
-    border-radius: 10px;
-    width:100px;
-    height:40px;
-    background-color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 0px;
-}
-.pagerender1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    width:100%;
-    height:100%;
-    border:1px solid black;
-    column-gap: 8px;
-} 
-.pagerender1 p{
-    margin:0px;
-
-}
 #banner{
     height:100%;
     display: flex;
@@ -132,7 +62,7 @@ header .pagerender{
     align-items: center;
     justify-content: center;
     column-gap: 10px;
-    margin:50px;
+    margin:30px;
 }
 #footer a{
     color:green;
@@ -142,16 +72,12 @@ header .pagerender{
 }
 #footer span{
     margin:0px;
-    /* background: linear-gradient(rgb(57, 7, 131),rgb(14, 171, 186)); */
-    /* background-clip: text; */
-    /* color: transparent; */
     color: black;
 }
 #Products{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap:2rem;
-    
     justify-content: center;
     width:100%;
 }
@@ -177,7 +103,6 @@ margin:10px 0px;
 padding:10px 5px;
 }
 #products h1{
-    margin: 10px;
     color: black;
 }
 #products p{
@@ -216,12 +141,12 @@ padding:10px 5px;
 #aboutdata{
     width:100%;
     height:100%;
+    margin-top: 30px;
 }
 #aboutdata h1{
     margin-top :20px;
     font-size: 3rem;
 }
-
 #aboutdatamatter{
     margin: 40px 0px;
     font-size: 1.1rem;
@@ -233,7 +158,6 @@ padding:10px 5px;
 }
 #aboutproducts h1{
     font-size: 3rem;
-
 }
 #aboutproductscontainer{
     display: grid;
@@ -269,8 +193,10 @@ padding:10px 5px;
 #aboutproducts h2{
     margin:2px;
 }
-#productscontainer{
-    margin-top: 50px;
+#productscontainer,#cartcontainer{
+    margin-top: 100px;
+    width:100%;
+    padding: 0px 5%;
 }
 #aboutproductscard h4{
     display: flex;
@@ -278,12 +204,12 @@ padding:10px 5px;
     height:100%;
     width:100%;
 }
-#contact{
-    width:90%;
+#contact,#cart{
+    width:100%;
     height:100%;
     padding:5%;
 }
-#contactcontainer h1{
+#contactcontainer h1,#cartcontainer h1{
 display: flex;
 justify-content: center;
 font-size: 2.5rem;
@@ -297,6 +223,7 @@ font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 #subinput{
     width:300px;
@@ -308,4 +235,219 @@ font-size: 2.5rem;
 #contactsendbtn {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    position: relative;
+  }
+  #logo {
+    color: green;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  #logo:hover {
+    transform: scale(1.1);
+  }
+  .menu-wrapper {
+      width:70%;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hamburg, .hamburg1 {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  #check, #check1 {
+      display: none;
+  }
+  #cartcontainerlist{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+ }
+  #cartlist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   width:100%;
+   height:300px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2.5rem;
+ }
+ #cartlist a{
+    margin-right: 40px;
+    color:black;
+    font-size: 5rem;
+ }
+ #cartlist p{
+    width:100%;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    border:1px solid black;
+    padding:10% 5%;
+    border-radius: 20px;
+ }
+ #cartlist a:hover{
+    color: green;   
+ }
+ #cartlist #cartlogo{
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0px;
+ }
+  @media (max-width: 1023px) {
+    .hamburg {
+      display: block;
+      margin-bottom:0px;
+    }
+    #hidden,#hidden1{
+        row-gap: 6px;
+        margin: 0;
+  padding: 0;
+    }
+    .menu-wrapper {
+      flex-direction: column;
+      position: fixed;
+      top: 75px;
+      right: -100%;
+      width: 90%;
+      height:250px;
+      background-color: rgba(76, 74, 74, 0.849);
+      padding: 0px 0px 10px 0px;
+      transition: right 0.3s ease-in-out;
+      z-index: 100;
+      border-radius: 20px;
+      margin: 0px 5%;
+      padding:5px;
+      gap: 0;
+    }
+    #check:checked ~ .menu-wrapper {
+      right: 0;
+    }
+    .menu-wrapper ul {
+      flex-direction: column;
+      align-items: center;
+      margin:0px;
+      padding:0px;
+    }
+    .menu-wrapper ul li{
+        height:30px;
+        width:100%;
+    } 
+    .menu-wrapper ul li a{
+      color:white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      width:100%;
+    }
+    #hidden1 li i{
+        display: none;
+    }
+    #hidden1 a{
+      font-size: 1.5rem;
+      border:none;
+      padding:0px;
+      border-radius: 0px;
+      background-color: transparent;
+  }
+  #productscontainer{
+    margin:20px;
+  }
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    
+    .menu-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    #hidden1,#hidden {
+        padding: 0%;
+        margin:0px;
+    } 
+    #hidden1 a{
+    text-decoration: none;
+      font-size: 0.8rem;
+      border:1px solid black;
+      padding:5px;
+      border-radius: 5px;
+      padding:5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #hidden1 a{
+    transform: scale(1);
+  }
+
+  #hidden a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+    transition: 0.3s;
+  }
+  #hidden a:hover {
+    color: darkgreen;
+    transform: scale(1.1);
+  }
+  }
+  @media (min-width: 1440px) {
+    .menu-wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+    #hidden1,#hidden {
+        padding: 0%;
+        margin:0px;
+    } 
+    #hidden1 a{
+    text-decoration: none;
+      font-size: 1rem;
+      border:1px solid black;
+      padding:5px;
+      border-radius: 5px;
+      padding:5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #hidden a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+    transition: all 0.3s linear;
+  }
+  #hidden a:hover {
+    color: darkgreen;
+  }
+  header{
+    position: fixed;
+    top:0px;
+    background-color: white;
+    z-index: 101;
+  }
+  }
+
