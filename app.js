@@ -82,8 +82,7 @@ function renderCart() {
     if (cart.length === 0) {
         cartContainer.innerHTML = `
             <div id="cartlist">
-                <p><a href="./1.Home.html"><i class="fa-solid fa-arrow-left"></i></a>
-                <a id="cartlogo" href="./2.Products.html">Continue Shopping 🛒🛍...</a></p>
+            <a href="./1.Home.html">Continue Shopping 🛒🛍...</a>
             </div>
         `;
         return;
