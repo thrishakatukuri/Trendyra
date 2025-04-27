@@ -44,7 +44,10 @@ function setupAddToCartButtons(currentProducts) {
 
         button.addEventListener('click', () => {
             addToCart(product);
+            console.log(button);
+            
         });
+
     });
 }
 
