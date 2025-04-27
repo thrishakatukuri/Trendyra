@@ -399,7 +399,6 @@ font-size: 2.5rem;
 #Cart{
     margin-top:0px;
 }
-
 @media (max-width: 1023px) {
     .hamburg {
       display: block;
@@ -408,7 +407,7 @@ font-size: 2.5rem;
     #hidden,#hidden1{
         row-gap: 6px;
         margin: 0;
-  padding: 0;
+        padding: 0;
     }
     .menu-wrapper {
       flex-direction: column;
@@ -484,23 +483,18 @@ font-size: 2.5rem;
       justify-content: center;
       align-items: center;
   }
-  #hidden1 a{
-    transform: scale(1);
-  }
-
   #hidden a {
     text-decoration: none;
     color:black;
     font-size: 1.5rem;
-    transition: 0.3s;
+    transition:all  0.3s ease;
   }
   #hidden a:hover {
     color: darkgreen;
     transform: scale(1.1);
   }
-  
   }
-  @media (min-width: 1440px) {
+  @media (min-width: 1440px){
     .menu-wrapper{
         display: flex;
         justify-content: space-around;
@@ -520,20 +514,17 @@ font-size: 2.5rem;
       justify-content: center;
       align-items: center;
   }
-  #hidden a{
-    text-decoration: none;
-    color:black;
-    font-size: 1.5rem;
-    transition: all 0.3s linear;
-  }
-  #hidden a:hover {
-    color: darkgreen;
-    transform: scale(1.5);
-  }
   header{
     position: fixed;
     top:0px;
     background-color: white;
     z-index: 101;
+  } #hidden a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+  }
+  #hidden a:hover {
+    color: darkgreen;
   }
   }
