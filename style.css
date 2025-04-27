@@ -8,6 +8,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #ccc;
 }
 #banner{
     height:100%;
@@ -461,6 +462,12 @@ font-size: 2.5rem;
     width:100%;
     margin-top:20px ;
   }
+  header{
+    position: fixed;
+    top:0px;
+    background-color: white;
+    z-index: 101;
+  }
   }
   @media (min-width: 1024px) and (max-width: 1439px) {
     
@@ -492,6 +499,12 @@ font-size: 2.5rem;
   #hidden a:hover {
     color: darkgreen;
     transform: scale(1.1);
+  }
+  header{
+    position: fixed;
+    top:0px;
+    background-color: white;
+    z-index: 101;
   }
   }
   @media (min-width: 1440px){
