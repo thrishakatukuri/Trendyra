@@ -407,9 +407,9 @@ ul {
     margin-bottom:0px;
   }
   #hidden,#hidden1{
-      row-gap: 6px;
-      margin: 0;
-      padding: 0;
+    row-gap: 6px;
+    margin: 0;
+    padding: 0;
   }
   .menu-wrapper {
     flex-direction: column;

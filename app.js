@@ -14,8 +14,8 @@ function renderProducts(products) {
         let shortDescription = item.description.split(' ').slice(0, 20).join(' ') + '...';
         Products.innerHTML += `
         <div id="products">
-            <div>
-                <img src="${item.image}" alt="${item.title}" width="100">
+         <div>
+            <img src="${item.image}" alt="${item.title}" width="100">
             </div>
             <h3><span>${shortTitle}</span></h3> 
             <div><p>${shortDescription}
@@ -26,7 +26,7 @@ function renderProducts(products) {
             <div class="cartbtn">
                 <button class="btn btn-dark">Details</button>
                 <button class="btn btn-dark add-to-cart" data-id="${item.id}">Add to Cart</button>
-            </div>
+          </div>
         </div>`;
     });
     setupAddToCartButtons(products);
