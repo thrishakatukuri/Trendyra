@@ -22,7 +22,8 @@ function renderProducts(products) {
                 <img src="${item.image}" alt="${item.title}" width="100">
             </div>
             <h3><span>${shortTitle}</span></h3> 
-            <div><p>${shortDescription}</p></div>
+            <div><p>${shortDescription}
+            </p></div>
             <div class="divider"></div>
             <h2>£${item.price}/-</h2>
             <div class="divider"></div>
@@ -44,8 +45,6 @@ function setupAddToCartButtons(currentProducts) {
 
         button.addEventListener('click', () => {
             addToCart(product);
-            console.log(button);
-            
         });
 
     });
