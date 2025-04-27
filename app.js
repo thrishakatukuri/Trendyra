@@ -21,7 +21,7 @@ function renderProducts(products) {
             <div>
                 <img src="${item.image}" alt="${item.title}" width="100">
             </div>
-            <h1><span>${shortTitle}</span></h1> 
+            <h3><span>${shortTitle}</span></h3> 
             <div><p>${shortDescription}</p></div>
             <div class="divider"></div>
             <h2>£${item.price}/-</h2>
