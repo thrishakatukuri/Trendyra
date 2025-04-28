@@ -56,6 +56,7 @@ header {
   padding: 10px 20px;
   position: relative;
   height:100px;
+  top:0px;
 }
 #logo {
   color: green;
@@ -212,17 +213,20 @@ ul {
     font-size: 3rem;
 }
 #aboutproductscontainer{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap:2rem;
-    padding:5%;
     column-gap: 10px;
-    width:100%;
+    width:100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
 }
 #aboutproductscard{
     display: flex;
     flex-direction: column;
-    width:300px;
     height:280px;
     border:1px solid black;
     border-radius: 10px;
@@ -233,7 +237,6 @@ ul {
     align-items: center;
     width:300px;
     border-radius: 10px;
-    padding-right: 1px;
     height:250px;
 } 
 #aboutdata h1,#aboutproducts h1,h4{
@@ -394,7 +397,6 @@ ul {
 }
 .CART,#productscontainer{
     width:100%;
-    margin-top:150px ;
     padding: 0% 5% 5% 5%;
 }
 #Cart{
@@ -461,7 +463,6 @@ ul {
  }
 .CART{
   width:100%;
-  margin-top:20px ;
  }
 header{
   position: fixed;
@@ -469,6 +470,13 @@ header{
   background-color: white;
   z-index: 101;
  }
+ #bannerdata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;position: absolute;
+    top:150px;
+     }
   }
 /* laptop screens */
 @media (min-width: 1024px) and (max-width: 1439px) {
