@@ -69,7 +69,7 @@ header {
   text-decoration: none;
   transition: 0.3s ease;
 }
-#logo:hover {
+#logo:hover{
   transform: scale(1.1);
 }
 .menu-wrapper {
