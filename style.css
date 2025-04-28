@@ -20,12 +20,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:95%;
+    width:100%;
+    padding: 2%;
     margin: 25px 0px; 
 }
 #bannerimg{
     display: flex;
     justify-content: center;
+    width:100%;
+
 }
 #banner img{
     position: relative;
@@ -38,11 +41,12 @@
 }
 #bannerdata {
     position: absolute;
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color:white;
-    width:86%;
+    width:80%;
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
