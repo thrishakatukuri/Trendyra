@@ -7,7 +7,7 @@ async function data() {
 }
 function renderProducts(products) {
     const Products = document.getElementById('Products');
-    if (!Products) return; 
+    if (!Products) return;
     Products.innerHTML = "";
     products.forEach((item) => {
         let shortTitle = item.title.length > 10 ? item.title.slice(0, 11) + '...' : item.title;
@@ -59,7 +59,7 @@ function updateCartCount() {
 
     const incrementElement = document.getElementById('increment');
     if (incrementElement) {
-        incrementElement.textContent = `(${count})`;
+        incrementElement.textContent = `${count}`;
     }
 }
 function renderCart() {
@@ -139,12 +139,12 @@ function updateCartItemQuantity(productId, change) {
         cart[index].quantity += change;
 
         if (cart[index].quantity < 1) {
-            cart.splice(index, 1); 
+            cart.splice(index, 1);
         }
 
         localStorage.setItem('cart', JSON.stringify(cart));
-        renderCart(); 
-        updateCartCount(); 
+        renderCart();
+        updateCartCount();
     }
 }
 document.addEventListener('DOMContentLoaded', () => {
@@ -181,5 +181,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderProducts(filtered);
             });
         }
-    }); 
+    });
 });
