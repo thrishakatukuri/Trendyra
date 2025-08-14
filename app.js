@@ -70,7 +70,7 @@ function renderCart() {
     if (cart.length === 0) {
         cartContainer.innerHTML = `
             <div id="cartlist">
-            <a href="./1.Home.html">Continue Shopping 🛒🛍...</a>
+            <a href="./index.html">Continue Shopping 🛒🛍...</a>
             </div>
         `;
         return;
